@@ -1,0 +1,4 @@
+C:\Users\56977\documents\visual studio 2017\Projects\Aplicacion_mobike\biblioteca_clases\bin\Debug\biblioteca_clases.dll
+C:\Users\56977\documents\visual studio 2017\Projects\Aplicacion_mobike\biblioteca_clases\bin\Debug\biblioteca_clases.pdb
+C:\Users\56977\documents\visual studio 2017\Projects\Aplicacion_mobike\biblioteca_clases\obj\Debug\biblioteca_clases.dll
+C:\Users\56977\documents\visual studio 2017\Projects\Aplicacion_mobike\biblioteca_clases\obj\Debug\biblioteca_clases.pdb
