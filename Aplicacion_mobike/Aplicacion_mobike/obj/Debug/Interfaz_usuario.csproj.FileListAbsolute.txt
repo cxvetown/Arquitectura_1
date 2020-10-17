@@ -23,3 +23,5 @@ C:\Users\56977\documents\visual studio 2017\Projects\Aplicacion_mobike\Aplicacio
 C:\Users\56977\documents\visual studio 2017\Projects\Aplicacion_mobike\Aplicacion_mobike\obj\Debug\Interfaz_usuario.csproj.GenerateResource.Cache
 C:\Users\56977\documents\visual studio 2017\Projects\Aplicacion_mobike\Aplicacion_mobike\obj\Debug\Aplicacion_mobike.exe
 C:\Users\56977\documents\visual studio 2017\Projects\Aplicacion_mobike\Aplicacion_mobike\obj\Debug\Aplicacion_mobike.pdb
+C:\Users\56977\documents\visual studio 2017\Projects\Aplicacion_mobike\Aplicacion_mobike\obj\Debug\Aplicacion_mobike.login_admin.resources
+C:\Users\56977\documents\visual studio 2017\Projects\Aplicacion_mobike\Aplicacion_mobike\obj\Debug\Aplicacion_mobike.login_funcionario.resources

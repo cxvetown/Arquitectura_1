@@ -82,11 +82,29 @@
     <Compile Include="Funcionario.Designer.cs">
       <DependentUpon>Funcionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Generar_reporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Generar_reporte.Designer.cs">
+      <DependentUpon>Generar_reporte.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_admin.Designer.cs">
+      <DependentUpon>login_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login_funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_funcionario.Designer.cs">
+      <DependentUpon>login_funcionario.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu_usuario.cs">
       <SubType>Form</SubType>
@@ -135,8 +153,17 @@
     <EmbeddedResource Include="Funcionario.resx">
       <DependentUpon>Funcionario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Generar_reporte.resx">
+      <DependentUpon>Generar_reporte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_admin.resx">
+      <DependentUpon>login_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_funcionario.resx">
+      <DependentUpon>login_funcionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu_usuario.resx">
       <DependentUpon>Menu_usuario.cs</DependentUpon>

@@ -10,25 +10,23 @@ using System.Windows.Forms;
 
 namespace Aplicacion_mobike
 {
-    public partial class Selector_administracion : Form
+    public partial class login_funcionario : Form
     {
-        public Selector_administracion()
+        public login_funcionario()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            login_funcionario fun = new login_funcionario();
-            this.Close();
-            fun.Show();
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            login_admin ad = new login_admin();
             this.Close();
-            ad.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Funcionario fun = new Funcionario();
+            fun.Show();
+            this.Close();
         }
     }
 }
