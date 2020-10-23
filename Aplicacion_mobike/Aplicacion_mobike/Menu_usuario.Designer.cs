@@ -75,6 +75,7 @@
             this.ClientSize = new System.Drawing.Size(572, 488);
             this.Controls.Add(this.gMapControl1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Menu_usuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu_usuario";
