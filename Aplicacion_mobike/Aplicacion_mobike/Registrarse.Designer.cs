@@ -43,7 +43,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.direccion_txt = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.trabaja_combo = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.Cuenta_bancaria_txt = new System.Windows.Forms.TextBox();
@@ -195,14 +195,14 @@
             this.direccion_txt.Size = new System.Drawing.Size(263, 20);
             this.direccion_txt.TabIndex = 14;
             // 
-            // comboBox1
+            // trabaja_combo
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(37, 254);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 15;
+            this.trabaja_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.trabaja_combo.FormattingEnabled = true;
+            this.trabaja_combo.Location = new System.Drawing.Point(37, 254);
+            this.trabaja_combo.Name = "trabaja_combo";
+            this.trabaja_combo.Size = new System.Drawing.Size(121, 21);
+            this.trabaja_combo.TabIndex = 15;
             // 
             // label7
             // 
@@ -244,7 +244,7 @@
             this.Controls.Add(this.Cuenta_bancaria_txt);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.trabaja_combo);
             this.Controls.Add(this.direccion_txt);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -284,7 +284,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox direccion_txt;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox trabaja_combo;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox Cuenta_bancaria_txt;

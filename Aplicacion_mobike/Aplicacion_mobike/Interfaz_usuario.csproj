@@ -213,6 +213,10 @@
       <Project>{065e83ba-bd52-4007-9487-56814297bf01}</Project>
       <Name>Controlador</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Mobike_data\Mobike_data.csproj">
+      <Project>{1867e84d-33db-4d3f-9a30-af509afd1403}</Project>
+      <Name>Mobike_data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

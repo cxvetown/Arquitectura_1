@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Mobike_data;
+using Biblioteca;
+
 
 namespace Aplicacion_mobike
 {
@@ -15,8 +18,8 @@ namespace Aplicacion_mobike
         public Registrarse()
         {
             InitializeComponent();
-            comboBox1.Items.Add("Si");
-            comboBox1.Items.Add("No");
+            trabaja_combo.Items.Add("Si");
+            trabaja_combo.Items.Add("No");
             nombre_txt.MaxLength = 50;
             mail_txt.MaxLength = 60;
             Rut_txt.MaxLength = 10;
@@ -45,8 +48,21 @@ namespace Aplicacion_mobike
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Usuario creado con exito", "Registrarse", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-            this.Close();
+            Cliente cli = new Cliente()
+            {
+                Nombre_cliente = nombre_txt.Text,
+                Rut_cliente = Rut_txt.Text,
+                Email_cliente = mail_txt.Text,
+                Direccion_cliente = direccion_txt.Text,
+                Trabaja_comuna = trabaja_combo.SelectedIndex.ToString(),
+                cuenta_bancaria = Cuenta_bancaria_txt.Text,
+                Contraseña_cliente = pass_register_txt.Text
+            };
+            int num = Cliente_conexion.InsertarSQL(cli);
+            if (num > 0)
+                MessageBox.Show("Cliente Creado con exito", "Mensaje Emergente", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            else
+                MessageBox.Show("Cliente no se pudo crear, rellene todos los datos", "Mensaje Emergente", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
         }
 
         private void button3_Click(object sender, EventArgs e)

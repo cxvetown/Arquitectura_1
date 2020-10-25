@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("biblioteca_clases")]
+[assembly: AssemblyTitle("Mobike_data")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("biblioteca_clases")]
+[assembly: AssemblyProduct("Mobike_data")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("1bc27cca-e644-4f47-a5ad-95c6cffbbdbd")]
+[assembly: Guid("1867e84d-33db-4d3f-9a30-af509afd1403")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //

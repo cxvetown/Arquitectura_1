@@ -9,3 +9,8 @@ C:\Users\richa\OneDrive\Escritorio\Arquitectura_1\Aplicacion_mobike\Controlador\
 C:\Users\richa\OneDrive\Escritorio\Arquitectura_1\Aplicacion_mobike\Controlador\obj\Debug\Controlador.csproj.CoreCompileInputs.cache
 C:\Users\richa\OneDrive\Escritorio\Arquitectura_1\Aplicacion_mobike\Controlador\obj\Debug\Controlador.dll
 C:\Users\richa\OneDrive\Escritorio\Arquitectura_1\Aplicacion_mobike\Controlador\obj\Debug\Controlador.pdb
+C:\Users\56977\Documents\GitHub\Arquitectura_1\Aplicacion_mobike\Controlador\bin\Debug\Controlador.dll
+C:\Users\56977\Documents\GitHub\Arquitectura_1\Aplicacion_mobike\Controlador\bin\Debug\Controlador.pdb
+C:\Users\56977\Documents\GitHub\Arquitectura_1\Aplicacion_mobike\Controlador\obj\Debug\Controlador.dll
+C:\Users\56977\Documents\GitHub\Arquitectura_1\Aplicacion_mobike\Controlador\obj\Debug\Controlador.pdb
+C:\Users\56977\Documents\GitHub\Arquitectura_1\Aplicacion_mobike\Controlador\obj\Debug\Controlador.csprojResolveAssemblyReference.cache
