@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            this.email_txt = new System.Windows.Forms.TextBox();
+            this.rut_txt = new System.Windows.Forms.TextBox();
             this.contraseña_txt = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -46,15 +46,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
-            // email_txt
+            // rut_txt
             // 
-            this.email_txt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.rut_txt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.email_txt.Location = new System.Drawing.Point(85, 158);
-            this.email_txt.Name = "email_txt";
-            this.email_txt.Size = new System.Drawing.Size(183, 20);
-            this.email_txt.TabIndex = 0;
+            this.rut_txt.Location = new System.Drawing.Point(85, 158);
+            this.rut_txt.Name = "rut_txt";
+            this.rut_txt.Size = new System.Drawing.Size(183, 20);
+            this.rut_txt.TabIndex = 0;
             // 
             // contraseña_txt
             // 
@@ -215,7 +215,7 @@
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.contraseña_txt);
-            this.Controls.Add(this.email_txt);
+            this.Controls.Add(this.rut_txt);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -230,7 +230,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox email_txt;
+        private System.Windows.Forms.TextBox rut_txt;
         private System.Windows.Forms.TextBox contraseña_txt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.LinkLabel linkLabel1;
