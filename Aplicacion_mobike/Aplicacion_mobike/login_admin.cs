@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using Biblioteca;
 
 namespace Aplicacion_mobike
 {
@@ -19,14 +21,43 @@ namespace Aplicacion_mobike
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Administrador ad = new Administrador();
-            this.Close();
-            ad.Show();
+            login();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        public void login()
+        {
+            using (SqlConnection conn = new SqlConnection(Conexion.connectionstring))
+            {
+                try
+                {
+                    conn.Open();
+                    SqlCommand command = new SqlCommand("SELECT rut, contraseña FROM administrador WHERE rut ='" + rut_txt.Text + "' AND contraseña ='" + pass_txt.Text + "'", conn);
+
+                    SqlDataReader dr = command.ExecuteReader();
+
+                    if (dr.Read())
+                    {
+                        MessageBox.Show("Login exitoso");
+                        Administrador ad = new Administrador();
+                        this.Close();
+                        ad.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error en los datos");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("error" + ex);
+                }
+            }
+
         }
     }
 }

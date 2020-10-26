@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login_admin));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.rut_txt = new System.Windows.Forms.TextBox();
+            this.pass_txt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -43,20 +43,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // rut_txt
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(41, 173);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(201, 20);
-            this.textBox1.TabIndex = 0;
+            this.rut_txt.BackColor = System.Drawing.SystemColors.Window;
+            this.rut_txt.Location = new System.Drawing.Point(41, 173);
+            this.rut_txt.Name = "rut_txt";
+            this.rut_txt.Size = new System.Drawing.Size(201, 20);
+            this.rut_txt.TabIndex = 0;
             // 
-            // textBox2
+            // pass_txt
             // 
-            this.textBox2.Location = new System.Drawing.Point(41, 252);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(201, 20);
-            this.textBox2.TabIndex = 1;
+            this.pass_txt.Location = new System.Drawing.Point(41, 252);
+            this.pass_txt.Name = "pass_txt";
+            this.pass_txt.Size = new System.Drawing.Size(201, 20);
+            this.pass_txt.TabIndex = 1;
+            this.pass_txt.UseSystemPasswordChar = true;
             // 
             // label1
             // 
@@ -158,8 +159,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.pass_txt);
+            this.Controls.Add(this.rut_txt);
             this.Name = "login_admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login_admin";
@@ -173,8 +174,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox rut_txt;
+        private System.Windows.Forms.TextBox pass_txt;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
