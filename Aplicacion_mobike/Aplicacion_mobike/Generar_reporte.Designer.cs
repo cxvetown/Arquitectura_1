@@ -33,10 +33,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.cod_reporte_txt = new System.Windows.Forms.TextBox();
+            this.descripcion_txt = new System.Windows.Forms.TextBox();
+            this.rut_txt = new System.Windows.Forms.TextBox();
+            this.nombre_txt = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -81,34 +81,34 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Descripcion";
             // 
-            // textBox1
+            // cod_reporte_txt
             // 
-            this.textBox1.Location = new System.Drawing.Point(25, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(236, 20);
-            this.textBox1.TabIndex = 4;
+            this.cod_reporte_txt.Location = new System.Drawing.Point(25, 56);
+            this.cod_reporte_txt.Name = "cod_reporte_txt";
+            this.cod_reporte_txt.Size = new System.Drawing.Size(236, 20);
+            this.cod_reporte_txt.TabIndex = 4;
             // 
-            // textBox2
+            // descripcion_txt
             // 
-            this.textBox2.Location = new System.Drawing.Point(25, 211);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(236, 119);
-            this.textBox2.TabIndex = 5;
+            this.descripcion_txt.Location = new System.Drawing.Point(25, 211);
+            this.descripcion_txt.Multiline = true;
+            this.descripcion_txt.Name = "descripcion_txt";
+            this.descripcion_txt.Size = new System.Drawing.Size(236, 119);
+            this.descripcion_txt.TabIndex = 5;
             // 
-            // textBox3
+            // rut_txt
             // 
-            this.textBox3.Location = new System.Drawing.Point(25, 147);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(236, 20);
-            this.textBox3.TabIndex = 6;
+            this.rut_txt.Location = new System.Drawing.Point(25, 147);
+            this.rut_txt.Name = "rut_txt";
+            this.rut_txt.Size = new System.Drawing.Size(236, 20);
+            this.rut_txt.TabIndex = 6;
             // 
-            // textBox4
+            // nombre_txt
             // 
-            this.textBox4.Location = new System.Drawing.Point(25, 95);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(236, 20);
-            this.textBox4.TabIndex = 7;
+            this.nombre_txt.Location = new System.Drawing.Point(25, 95);
+            this.nombre_txt.Name = "nombre_txt";
+            this.nombre_txt.Size = new System.Drawing.Size(236, 20);
+            this.nombre_txt.TabIndex = 7;
             // 
             // button1
             // 
@@ -125,6 +125,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Enviar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -152,15 +153,16 @@
             this.ClientSize = new System.Drawing.Size(344, 394);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nombre_txt);
+            this.Controls.Add(this.rut_txt);
+            this.Controls.Add(this.descripcion_txt);
+            this.Controls.Add(this.cod_reporte_txt);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Generar_reporte";
             this.Text = "Generar_reporte";
             this.ResumeLayout(false);
@@ -174,10 +176,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox cod_reporte_txt;
+        private System.Windows.Forms.TextBox descripcion_txt;
+        private System.Windows.Forms.TextBox rut_txt;
+        private System.Windows.Forms.TextBox nombre_txt;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }

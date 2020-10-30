@@ -78,9 +78,9 @@
             // 
             this.pass_register_txt.Location = new System.Drawing.Point(38, 366);
             this.pass_register_txt.Name = "pass_register_txt";
+            this.pass_register_txt.PasswordChar = '*';
             this.pass_register_txt.Size = new System.Drawing.Size(264, 20);
             this.pass_register_txt.TabIndex = 4;
-            this.pass_register_txt.UseSystemPasswordChar = true;
             // 
             // button1
             // 
@@ -260,6 +260,7 @@
             this.Controls.Add(this.nombre_txt);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Registrarse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrarse";

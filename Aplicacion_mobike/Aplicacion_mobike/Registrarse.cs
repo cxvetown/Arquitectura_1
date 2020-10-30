@@ -27,7 +27,14 @@ namespace Aplicacion_mobike
 
         private void button1_Click(object sender, EventArgs e)
         {
-            pass_register_txt.UseSystemPasswordChar = false;
+            if (pass_register_txt.PasswordChar=='*')
+            {
+                pass_register_txt.PasswordChar = '\0';
+            }
+            else
+            {
+                pass_register_txt.PasswordChar = '*';
+            }
         }
 
         private void Rut_txt_KeyPress(object sender, KeyPressEventArgs e)

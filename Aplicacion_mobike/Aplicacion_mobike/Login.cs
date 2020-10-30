@@ -21,7 +21,14 @@ namespace Aplicacion_mobike
 
         private void button1_Click(object sender, EventArgs e)
         {
-            contraseña_txt.UseSystemPasswordChar = false;
+            if (contraseña_txt.PasswordChar == '*')
+            {
+                contraseña_txt.PasswordChar = '\0';
+            }
+            else
+            {
+                contraseña_txt.PasswordChar = '*';
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -32,19 +39,39 @@ namespace Aplicacion_mobike
 
         private void button2_Click(object sender, EventArgs e)
         {
-            login();
+            using (SqlConnection conn = new SqlConnection(Conexion.connectionstring))
+            {
+                try
+                {
+                    conn.Open();
+                    SqlCommand command = new SqlCommand("select rut_bloqueado from usuarios_bloqueados WHERE rut_bloqueado =@rut_bloqueado", conn);
+                    command.Parameters.AddWithValue("@rut_bloqueado", rut_txt.Text);
+                    SqlDataReader read = command.ExecuteReader();
+                    if (read.Read())
+                    {
+                        txt_bloq.Text = read["rut_bloqueado"].ToString();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("error" + ex);
+                }
+
+            }
+            if(txt_bloq.Text == rut_txt.Text)
+            {
+                MessageBox.Show("usuario bloqueado");
+            }
+            else
+            {
+                login();
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             Selector_administracion sel = new Selector_administracion();
             sel.Show();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            testbd bd = new testbd();
-            bd.Show();
         }
         public void login()
         {
@@ -54,9 +81,7 @@ namespace Aplicacion_mobike
                 {
                     conn.Open();
                     SqlCommand command = new SqlCommand("SELECT rut, contraseña FROM usuario WHERE rut ='" + rut_txt.Text + "' AND contraseña ='" + contraseña_txt.Text + "'", conn);
-
                     SqlDataReader dr = command.ExecuteReader();
-
                     if (dr.Read())
                     {
                         MessageBox.Show("Login exitoso");
@@ -74,6 +99,12 @@ namespace Aplicacion_mobike
                 }
             }
 
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            cambio_contraseña ca = new cambio_contraseña();
+            ca.Show();
         }
     }
 }

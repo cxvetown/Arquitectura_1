@@ -40,9 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arriendo_conexion.cs" />
     <Compile Include="Cliente_conexion.cs" />
     <Compile Include="Conexion.cs" />
+    <Compile Include="Devolucion_conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporte_conexion.cs" />
+    <Compile Include="usuario_bloqueado_conexion.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mobike_data\Mobike_data.csproj">

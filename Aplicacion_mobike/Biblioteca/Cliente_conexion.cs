@@ -42,5 +42,64 @@ namespace Biblioteca
             }
             return rowsAffected;
         }
+
+        public static int eliminarSQL(Cliente newcliente)
+        {
+            Int32 rowAffected = 0;
+
+            using (SqlConnection conn = new SqlConnection(Conexion.connectionstring))
+            {
+                SqlCommand command = new SqlCommand(null, conn);
+                //query
+                command.CommandText = "DELETE FROM usuario WHERE rut=@rut;";
+
+                command.Parameters.AddWithValue("@rut", newcliente.Rut_cliente);
+
+                try
+                {
+                    conn.Open();
+                    rowAffected = command.ExecuteNonQuery();
+                    Console.WriteLine("rowsaffected: {0}", rowAffected);
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("error conexion");
+                }
+                conn.Close();
+            }
+            return rowAffected;
+        }
+
+        public static int updateSQL(Cliente newcliente)
+        {
+            Int32 rowsAffected = 0;
+
+            using (SqlConnection conn = new SqlConnection(Conexion.connectionstring))
+            {
+                SqlCommand command = new SqlCommand(null, conn);
+
+                //query
+                command.CommandText = "UPDATE usuario SET contraseña=@contraseña " +
+                    "WHERE rut=@rut;";
+                command.Parameters.AddWithValue("@contraseña", newcliente.Contraseña_cliente);
+                command.Parameters.AddWithValue("@rut", newcliente.Rut_cliente);
+
+
+                try
+                {
+                    conn.Open();
+                    rowsAffected = command.ExecuteNonQuery();
+                    Console.WriteLine("rowsaffected: {0}", rowsAffected);
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("no se actualizo");
+                }
+                conn.Close();
+
+            }
+
+            return rowsAffected;
+        }
     }
 }

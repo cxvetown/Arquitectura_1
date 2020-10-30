@@ -59,5 +59,17 @@ namespace Aplicacion_mobike
             }
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (pass_txt.PasswordChar == '*')
+            {
+                pass_txt.PasswordChar = '\0';
+            }
+            else
+            {
+                pass_txt.PasswordChar = '*';
+            }
+        }
     }
 }

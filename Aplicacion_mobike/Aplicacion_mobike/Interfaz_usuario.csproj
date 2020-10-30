@@ -70,6 +70,18 @@
     <Compile Include="Arrendar.Designer.cs">
       <DependentUpon>Arrendar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Bloqueo_usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bloqueo_usuario.Designer.cs">
+      <DependentUpon>Bloqueo_usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cambio_contraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cambio_contraseña.Designer.cs">
+      <DependentUpon>cambio_contraseña.cs</DependentUpon>
+    </Compile>
     <Compile Include="Devolucion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +124,16 @@
     <Compile Include="Menu_usuario.Designer.cs">
       <DependentUpon>Menu_usuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="MobikeDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MobikeDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MobikeDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MobikeDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registrarse.cs">
@@ -132,12 +154,6 @@
     <Compile Include="Selector_administracion.Designer.cs">
       <DependentUpon>Selector_administracion.cs</DependentUpon>
     </Compile>
-    <Compile Include="testbd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="testbd.Designer.cs">
-      <DependentUpon>testbd.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +162,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Arrendar.resx">
       <DependentUpon>Arrendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bloqueo_usuario.resx">
+      <DependentUpon>Bloqueo_usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cambio_contraseña.resx">
+      <DependentUpon>cambio_contraseña.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Devolucion.resx">
       <DependentUpon>Devolucion.cs</DependentUpon>
@@ -187,9 +209,28 @@
     <EmbeddedResource Include="Selector_administracion.resx">
       <DependentUpon>Selector_administracion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="testbd.resx">
-      <DependentUpon>testbd.cs</DependentUpon>
-    </EmbeddedResource>
+    <None Include="MobikeDataSet12.xsc">
+      <DependentUpon>MobikeDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="MobikeDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MobikeDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MobikeDataSet12.xss">
+      <DependentUpon>MobikeDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="MobikeDataSet2.xsc">
+      <DependentUpon>MobikeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="MobikeDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MobikeDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MobikeDataSet2.xss">
+      <DependentUpon>MobikeDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -217,6 +258,9 @@
       <Project>{1867e84d-33db-4d3f-9a30-af509afd1403}</Project>
       <Name>Mobike_data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
