@@ -52,9 +52,10 @@ namespace Aplicacion_mobike
             };
             int num = usuario_bloqueado_conexion.InsertarSQL(usu);
             if (num > 0)
-                MessageBox.Show("Cliente Creado con exito", "Mensaje Emergente", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show("Cliente bloqueado", "Mensaje Emergente", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             else
-                MessageBox.Show("Cliente no se pudo crear, rellene todos los datos", "Mensaje Emergente", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show("Cliente no se pudo bloquear, rellene todos los datos", "Mensaje Emergente", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -83,11 +84,13 @@ namespace Aplicacion_mobike
                 {
                     rut_bloqueado = txt_rut_test.Text
                 };
-                int num = usuario_bloqueado_conexion.eliminarSQL(usu);
+                    usuario_bloqueado_conexion.eliminarSQL(usu);
+
                 Reporte rep = new Reporte()
                 {
-
+                    cod_usuario = reporte_txt.Text
                 };
+                Reporte_conexion.eliminarSQL(rep);
             }
         }
     }

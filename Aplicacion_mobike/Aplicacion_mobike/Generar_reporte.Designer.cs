@@ -99,6 +99,7 @@
             // rut_txt
             // 
             this.rut_txt.Location = new System.Drawing.Point(25, 147);
+            this.rut_txt.MaxLength = 10;
             this.rut_txt.Name = "rut_txt";
             this.rut_txt.Size = new System.Drawing.Size(236, 20);
             this.rut_txt.TabIndex = 6;
@@ -164,7 +165,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Generar_reporte";
-            this.Text = "Generar_reporte";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Generar reporte";
             this.ResumeLayout(false);
             this.PerformLayout();
 

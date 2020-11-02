@@ -78,9 +78,9 @@
             // 
             this.pass_register_txt.Location = new System.Drawing.Point(38, 366);
             this.pass_register_txt.Name = "pass_register_txt";
-            this.pass_register_txt.PasswordChar = '*';
             this.pass_register_txt.Size = new System.Drawing.Size(264, 20);
             this.pass_register_txt.TabIndex = 4;
+            this.pass_register_txt.UseSystemPasswordChar = true;
             // 
             // button1
             // 
@@ -229,6 +229,7 @@
             // Cuenta_bancaria_txt
             // 
             this.Cuenta_bancaria_txt.Location = new System.Drawing.Point(39, 316);
+            this.Cuenta_bancaria_txt.MaxLength = 10;
             this.Cuenta_bancaria_txt.Name = "Cuenta_bancaria_txt";
             this.Cuenta_bancaria_txt.Size = new System.Drawing.Size(262, 20);
             this.Cuenta_bancaria_txt.TabIndex = 18;

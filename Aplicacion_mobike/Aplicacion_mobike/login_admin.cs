@@ -42,14 +42,22 @@ namespace Aplicacion_mobike
 
                     if (dr.Read())
                     {
-                        MessageBox.Show("Login exitoso");
+                        MessageBox.Show("Login exitoso", "iniciar sesion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         Administrador ad = new Administrador();
                         this.Close();
                         ad.Show();
+                        pass_txt.Clear();
+                        rut_txt.Clear();
+                    }
+                    else if (rut_txt.Text=="")
+                    {
+                        MessageBox.Show("rellenar las casillas", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
                     else
                     {
-                        MessageBox.Show("Error en los datos");
+                        MessageBox.Show("Error en los datos", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        pass_txt.Clear();
+                        rut_txt.Clear();
                     }
                 }
                 catch (Exception ex)
@@ -62,13 +70,13 @@ namespace Aplicacion_mobike
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (pass_txt.PasswordChar == '*')
+            if (pass_txt.UseSystemPasswordChar== true)
             {
-                pass_txt.PasswordChar = '\0';
+                pass_txt.UseSystemPasswordChar= false;
             }
             else
             {
-                pass_txt.PasswordChar = '*';
+                pass_txt.UseSystemPasswordChar = true ;
             }
         }
     }

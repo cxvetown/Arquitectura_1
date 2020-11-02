@@ -27,13 +27,13 @@ namespace Aplicacion_mobike
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (pass_register_txt.PasswordChar=='*')
+            if (pass_register_txt.UseSystemPasswordChar== true)
             {
-                pass_register_txt.PasswordChar = '\0';
+                pass_register_txt.UseSystemPasswordChar=false;
             }
             else
             {
-                pass_register_txt.PasswordChar = '*';
+                pass_register_txt.UseSystemPasswordChar=true;
             }
         }
 

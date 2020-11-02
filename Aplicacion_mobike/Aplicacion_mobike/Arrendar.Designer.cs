@@ -99,6 +99,7 @@
             // rut_Txt
             // 
             this.rut_Txt.Location = new System.Drawing.Point(15, 147);
+            this.rut_Txt.MaxLength = 10;
             this.rut_Txt.Name = "rut_Txt";
             this.rut_Txt.Size = new System.Drawing.Size(199, 20);
             this.rut_Txt.TabIndex = 5;

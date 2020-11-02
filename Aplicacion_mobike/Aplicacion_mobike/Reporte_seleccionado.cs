@@ -32,7 +32,7 @@ namespace Aplicacion_mobike
             {
                 Rut_cliente = rut_txt.Text
             };
-            Cliente_conexion.eliminarSQL(cli);
+             Cliente_conexion.eliminarSQL(cli);
 
             Reporte rep = new Reporte()
             {

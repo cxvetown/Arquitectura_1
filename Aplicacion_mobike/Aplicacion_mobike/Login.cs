@@ -21,13 +21,13 @@ namespace Aplicacion_mobike
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (contraseña_txt.PasswordChar == '*')
+            if (contraseña_txt.UseSystemPasswordChar==true)
             {
-                contraseña_txt.PasswordChar = '\0';
+                contraseña_txt.UseSystemPasswordChar= false;
             }
             else
             {
-                contraseña_txt.PasswordChar = '*';
+                contraseña_txt.UseSystemPasswordChar = true ;
             }
         }
 
@@ -58,14 +58,19 @@ namespace Aplicacion_mobike
                 }
 
             }
-            if(txt_bloq.Text == rut_txt.Text)
+            if (rut_txt.Text == "")
             {
-                MessageBox.Show("usuario bloqueado");
+                MessageBox.Show("ingresar valores en las casillas", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (txt_bloq.Text == rut_txt.Text)
+            {
+                MessageBox.Show("usuario bloqueado","Alerta",MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
                 login();
             }
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -84,13 +89,17 @@ namespace Aplicacion_mobike
                     SqlDataReader dr = command.ExecuteReader();
                     if (dr.Read())
                     {
-                        MessageBox.Show("Login exitoso");
+                        MessageBox.Show("Login exitoso","iniciar sesion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         Menu_usuario usu = new Menu_usuario();
                         usu.Show();
+                        rut_txt.Clear();
+                        contraseña_txt.Clear();
                     }
                     else
                     {
-                        MessageBox.Show("Error en los datos");
+                        MessageBox.Show("Error en los datos","Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        rut_txt.Clear();
+                        contraseña_txt.Clear();
                     }
                 }
                 catch(Exception ex)

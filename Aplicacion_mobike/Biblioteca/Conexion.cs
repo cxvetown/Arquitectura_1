@@ -11,6 +11,7 @@ namespace Biblioteca
     {
         public static String connectionstring = @"Server=DESKTOP-RHN94QU\SQLEXPRESS;Database=Mobike;Trusted_Connection=True";
 
+
         public static bool test()
         {
             using (SqlConnection connection = new SqlConnection(connectionstring))

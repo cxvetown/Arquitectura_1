@@ -69,9 +69,9 @@
             // 
             this.funcionario_pass_txt.Location = new System.Drawing.Point(39, 176);
             this.funcionario_pass_txt.Name = "funcionario_pass_txt";
-            this.funcionario_pass_txt.PasswordChar = '*';
             this.funcionario_pass_txt.Size = new System.Drawing.Size(205, 20);
             this.funcionario_pass_txt.TabIndex = 3;
+            this.funcionario_pass_txt.UseSystemPasswordChar = true;
             // 
             // button1
             // 

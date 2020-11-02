@@ -35,7 +35,10 @@ namespace Aplicacion_mobike
             };
             int num = Reporte_conexion.InsertarSQL(rep);
             if (num > 0)
+            {
                 MessageBox.Show("Reporte enviado", "Mensaje Emergente", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                this.Close();
+            }
             else
                 MessageBox.Show("Fallo en crear reporte", "Mensaje Emergente", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
         }

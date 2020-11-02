@@ -110,6 +110,7 @@
             // Rut_txt
             // 
             this.Rut_txt.Location = new System.Drawing.Point(31, 58);
+            this.Rut_txt.MaxLength = 10;
             this.Rut_txt.Name = "Rut_txt";
             this.Rut_txt.Size = new System.Drawing.Size(163, 20);
             this.Rut_txt.TabIndex = 6;
@@ -118,17 +119,17 @@
             // 
             this.new_pass_txt.Location = new System.Drawing.Point(31, 131);
             this.new_pass_txt.Name = "new_pass_txt";
-            this.new_pass_txt.PasswordChar = '*';
             this.new_pass_txt.Size = new System.Drawing.Size(163, 20);
             this.new_pass_txt.TabIndex = 7;
+            this.new_pass_txt.UseSystemPasswordChar = true;
             // 
             // repeat_pass_Txt
             // 
             this.repeat_pass_Txt.Location = new System.Drawing.Point(31, 195);
             this.repeat_pass_Txt.Name = "repeat_pass_Txt";
-            this.repeat_pass_Txt.PasswordChar = '*';
             this.repeat_pass_Txt.Size = new System.Drawing.Size(163, 20);
             this.repeat_pass_Txt.TabIndex = 8;
+            this.repeat_pass_Txt.UseSystemPasswordChar = true;
             // 
             // label4
             // 

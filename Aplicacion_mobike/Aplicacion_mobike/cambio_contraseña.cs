@@ -26,25 +26,25 @@ namespace Aplicacion_mobike
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (new_pass_txt.PasswordChar == '*')
+            if (new_pass_txt.UseSystemPasswordChar== true)
             {
-                new_pass_txt.PasswordChar = '\0';
+                new_pass_txt.UseSystemPasswordChar=false;
             }
             else
             {
-                new_pass_txt.PasswordChar = '*';
+                new_pass_txt.UseSystemPasswordChar=true;
             }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (repeat_pass_Txt.PasswordChar == '*')
+            if (repeat_pass_Txt.UseSystemPasswordChar==true)
             {
-                repeat_pass_Txt.PasswordChar = '\0';
+                repeat_pass_Txt.UseSystemPasswordChar=false;
             }
             else
             {
-                repeat_pass_Txt.PasswordChar = '*';
+                repeat_pass_Txt.UseSystemPasswordChar=true;
             }
         }
 
@@ -58,11 +58,14 @@ namespace Aplicacion_mobike
             if (new_pass_txt.Text == repeat_pass_Txt.Text)
             {
                 Cliente_conexion.updateSQL(cli);
-                MessageBox.Show("Cliente Creado con exito", "Mensaje Emergente", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show("Contraseña cambiada con exito", "Mensaje Emergente", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                this.Close();
             }
             else
             {
                 MessageBox.Show("Las contraseñas no coinciden", "Mensaje Emergente", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                new_pass_txt.Clear();
+                repeat_pass_Txt.Clear();
             }
         }
     }

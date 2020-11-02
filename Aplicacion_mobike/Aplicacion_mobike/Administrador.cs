@@ -36,7 +36,6 @@ namespace Aplicacion_mobike
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            MessageBox.Show("test");
             Reporte_seleccionado rep = new Reporte_seleccionado();
             rep.Show();
             rep.rut_txt.Text = dataGridView1.CurrentCell.Value.ToString();

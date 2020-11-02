@@ -52,6 +52,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.rut_txt.Location = new System.Drawing.Point(85, 158);
+            this.rut_txt.MaxLength = 10;
             this.rut_txt.Name = "rut_txt";
             this.rut_txt.Size = new System.Drawing.Size(183, 20);
             this.rut_txt.TabIndex = 0;
@@ -60,9 +61,9 @@
             // 
             this.contraseña_txt.Location = new System.Drawing.Point(85, 215);
             this.contraseña_txt.Name = "contraseña_txt";
-            this.contraseña_txt.PasswordChar = '*';
             this.contraseña_txt.Size = new System.Drawing.Size(183, 20);
             this.contraseña_txt.TabIndex = 1;
+            this.contraseña_txt.UseSystemPasswordChar = true;
             // 
             // button1
             // 
