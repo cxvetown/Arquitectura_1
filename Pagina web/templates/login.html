@@ -40,12 +40,12 @@ margin-bottom: 0;
 </style>
 </head>
 <body>
-	<form action="">
-    	<h2>Iniciar Sesion funcionario</h2>
-        <input type="text" placeholder="&#128272; RUT" name="user_txt" />
+	<form name="form" method="post" action="/login_user">
+    	<h2>Iniciar Sesion en MOBIKE</h2>
+        <input type="text" placeholder="&#128272; Usuario" name="user_txt" />
         <input type="password" placeholder="&#128272; Contraseña" name="pass_txt" />
-        <a href="funcionario.html"><input type="button" value="Aceptar"></a>
-        <a href="index.html"><input type="button" value="Cancelar"></a>
+        <input type="submit" name="Aceptar_btn" value="Aceptar"/>
+        <a href="/Index"><input type="button" value="Cancelar"></a>
     </form>
    
 </body>

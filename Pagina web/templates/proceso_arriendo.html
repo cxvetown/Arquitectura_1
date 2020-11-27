@@ -36,6 +36,15 @@
 </head>
 <body>
 
+
+<script type="text/javascript">
+  function codigo(){
+    var aleatorio = Math.round(Math.random()*1000);
+    document.getElementById('code').innerHTML;
+  }
+</script>
+
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -44,49 +53,50 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.html">MOBIKE</a>
+      <a class="navbar-brand" href="/Index">MOBIKE</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="Index.html">inicio</a></li>
+        <li class="active"><a href="/Index">inicio</a></li>      
       </ul>
       <ul class="nav navbar-nav navbar-right">
-     	<li><a href="registrarse.html">Registrarse</a></li>
-        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Iniciar Sesion</a></li>
+      	<li><a href="/registrarse">Registrarse</a></li>
+        <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Iniciar Sesion</a></li>
       </ul>
     </div>
   </div>
 </nav>
 &nbsp;
-<h2><p align="left">REPORTES</p></h2>
+<h1><p align="center">Arriendo</p></h1>
 &nbsp;
-&nbsp;
-<table width="360" border="0" table style="margin:auto">
+<form name="form" method="post" action="/arriendo_mantenedor">
+<p align="center">
+	<table width="376" border="0" table style="margin: 0 auto;">
   <tr>
-    <td width="72">RUT</td>
-    <td width="272"><input type="text" name="txt_rut" readonly placeholder="12.669.885-2"></td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <th width="217">Ingrese codigo de 4 digitos </th>
+    <td width="149"><input type="text" name="txt_codigo"></td>
   </tr>
     <tr>
-    <td>Descripcion</td>
-    <td><textarea name="txt_descripcion" cols="40" rows="5" readonly placeholder="Bicicleta robada, paradero desconocido, ultimo usuario en ocuparla se percata de que fue sustraida del local donde esperaba"></textarea></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Rut cliente</td>
+    <td width="149"><input type="text" name="rut_txt" placeholder="$9999" ></td>
   </tr>
 </table>
-
 &nbsp;
-<p align="center">
-<a class="btn btn-lg btn-primary" href="#" role="button">Bloquear</a>
-<a class="btn btn-lg btn-primary" href="#" role="button">Eliminar</a>
-<a class="btn btn-lg btn-primary" href="Index.html" role="button">Cancelar</a></p>
+</p>
+<div style="text-align: center;">
+<input type="submit" name="Aceptar_btn" value="Aceptar"/>
+<a href="/Arriendo"><input type="button" value="Cancelar"></a>
+</div>
 &nbsp;
 <footer class="container">
     <p class="float-right"><a href="#">Inicio</a></p>
     <p>&copy; 2017-2020 MOBIKE, Inc. &middot; <a href="#">Privacidad</a> &middot; <a href="#">Terminos</a></p>
   </footer>
-
+</form>
 </body>
 </html>
 

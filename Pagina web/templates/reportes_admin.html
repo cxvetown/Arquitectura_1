@@ -44,41 +44,56 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.html">MOBIKE</a>
+      <a class="navbar-brand" href="/Index">MOBIKE</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="Index.html">inicio</a></li>      
+        <li class="active"><a href="/Index">inicio</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-      	<li><a href="registrarse.html">Registrarse</a></li>
-        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Iniciar Sesion</a></li>
+     	<li><a href="/registrarse">Registrarse</a></li>
+        <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Iniciar Sesion</a></li>
       </ul>
     </div>
   </div>
 </nav>
 &nbsp;
-<h1><p align="center">Devolucion</p></h1>
+<h2><p align="left">REPORTES</p></h2>
+&nbsp;
+&nbsp;
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<ul class="flashes">
+  {% for message in messages  %}
+    <li>{{message}}</li>
+  {% endfor%}
+</ul>
+{% endif %}
+{% endwith %}
+
+<table border="1" align="center">
+  <thead >
+    <tr>
+      <td width="102">Rut </td>
+      <td width="213">Descripcion </td>
+    </tr>
+  </thead>
+  <tbody>
+  {% for reporte in reporte_add_especifico %}
+  <tr>
+    <td>{{reporte.0 }}</td>
+    <td>{{reporte.1 }}</td>
+  </tr>
+  {% endfor %}
+&nbsp;
+</tbody>
+</table>
+
+
 &nbsp;
 <p align="center">
-	<table width="376" border="0" table style="margin: 0 auto;">
-  <tr>
-    <th width="217">RUT</th>
-    <td width="149"><input type="text" name="txt_rut" placeholder="ej: 9999999-9"></td>
-  </tr>
-    <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td>Valor total</td>
-    <td width="149"><input type="text" name="txt_valor_total" placeholder="$9999" readonly></td>
-  </tr>
-</table>
-&nbsp;
-</p>
-<p align="center"><a class="btn btn-lg btn-primary" href="#" role="button">Devolver</a>
-<a class="btn btn-lg btn-primary" href="Arriendo.html" role="button">Cancelar</a></p>
+<a class="btn btn-lg btn-primary" href="/Index" role="button">Cancelar</a></p>
 &nbsp;
 <footer class="container">
     <p class="float-right"><a href="#">Inicio</a></p>

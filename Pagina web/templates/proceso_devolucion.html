@@ -44,87 +44,50 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.html">MOBIKE</a>
+      <a class="navbar-brand" href="/Index">MOBIKE</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="Index.html">inicio</a></li>      
+        <li class="active"><a href="/Index">inicio</a></li>      
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Iniciar Sesion</a></li>
+      	<li><a href="/registrarse">Registrarse</a></li>
+        <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Iniciar Sesion</a></li>
       </ul>
     </div>
   </div>
 </nav>
 &nbsp;
-<h1><p align="center">Formulario de registro</p></h1>
+<h1><p align="center">Devolucion</p></h1>
 &nbsp;
+<form name="form" method="post" action="/devolucion_mantenedor">
 <p align="center">
 	<table width="376" border="0" table style="margin: 0 auto;">
   <tr>
-    <th width="217">Nombre</th>
-    <td width="149"><input type="text" name="txt_nombre" placeholder="ej: Jose Perez" ></td>
+    <th width="217">RUT</th>
+    <td width="149"><input type="text" name="txt_rut" placeholder="ej: 9999999-9"></td>
   </tr>
     <tr>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
-    <th width="217">Rut</td>
-    <td width="149"><input type="text" name="txt_rut" placeholder="ej:99999999-9" maxlength="10"></td>
-  </tr>
-    <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-    <tr>
-    <th width="217">Email</th>
-    <td width="149"><input type="text" name="txt_email" placeholder="ejemplo@ejemplo.com" ></td>
-  </tr>
-    <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-    <tr>
-    <th width="217">Direccion</th>
-    <td width="149"><input type="text" name="txt_direccion" placeholder="ej: pasaje 123" ></td>
-  </tr>
-    <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-    <tr>
-    <th width="217">Trabaja en esta comuna</th>
-    <td width="149"><select name=" ">
- <option value="Si">Si</option>
- <option value="No">No</option>
-</select></td>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  </tr>
-  <th width="217">Cuenta Bancaria</th>
-    <td width="149"><input type="text" name="txt_bancaria" placeholder="ej:999-999-999-999" ></td>
-      <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  </tr>
-      <th width="217">Contraseña</th>
-    <td width="149"><input type="password" name="passwd" ></td>
+    <td>Valor total</td>
+    <td width="149"><input type="text" name="txt_valor_total" placeholder="$9999" ></td>
   </tr>
 </table>
 &nbsp;
 </p>
-<p align="center"><a class="btn btn-lg btn-primary" href="#" role="button">Aceptar</a>
-<a class="btn btn-lg btn-primary" href="Index.html" role="button">Cancelar</a></p>
+<div style="text-align: center;">
+<input type="submit" name="Aceptar_btn" value="Aceptar"/>
+<a href="/Arriendo"><input type="button" value="Cancelar"></a>
 &nbsp;
+</div>
 <footer class="container">
     <p class="float-right"><a href="#">Inicio</a></p>
     <p>&copy; 2017-2020 MOBIKE, Inc. &middot; <a href="#">Privacidad</a> &middot; <a href="#">Terminos</a></p>
   </footer>
-
+</form>
 </body>
 </html>
 

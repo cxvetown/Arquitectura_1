@@ -40,12 +40,12 @@ margin-bottom: 0;
 </style>
 </head>
 <body>
-	<form action="">
+	<form name="form" method="post" action="/login_admin_mantenedor">
     	<h2>Iniciar sesion administrador </h2>
         <input type="text" placeholder="&#128272; RUT" name="user_txt" />
         <input type="password" placeholder="&#128272; Contraseña" name="pass_txt" />
-        <a href="administrador.html"><input type="button" value="Ingresar"/>
-        <a href="index.html"><input type="button" value="Cancelar"></a>
+        <input type="submit" name="Aceptar_btn" value="Aceptar"/>
+        <a href="/Index"><input type="button" value="Cancelar"></a>
     </form>
    
 </body>
