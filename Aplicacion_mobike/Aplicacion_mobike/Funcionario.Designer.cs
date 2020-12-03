@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Funcionario));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -139,10 +140,15 @@
             this.SuspendLayout();
             // 
 >>>>>>> parent of bc9a18a... app terminada
+=======
+            this.SuspendLayout();
+            // 
+>>>>>>> parent of bc9a18a... app terminada
             // Funcionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
 <<<<<<< HEAD
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -151,6 +157,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+=======
+            this.ClientSize = new System.Drawing.Size(617, 459);
+>>>>>>> parent of bc9a18a... app terminada
 =======
             this.ClientSize = new System.Drawing.Size(617, 459);
 >>>>>>> parent of bc9a18a... app terminada
