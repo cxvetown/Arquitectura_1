@@ -39,16 +39,5 @@ namespace Aplicacion_mobike
             gMapControl1.Zoom = 13;
             gMapControl1.AutoScroll = true;
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Generar_reporte rep = new Generar_reporte();
-            rep.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }

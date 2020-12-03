@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Mobike_data;
-using Biblioteca;
 
 namespace Aplicacion_mobike
 {
@@ -23,6 +21,7 @@ namespace Aplicacion_mobike
         {
             this.Close();
         }
+<<<<<<< HEAD
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -42,5 +41,7 @@ namespace Aplicacion_mobike
             else
                 MessageBox.Show("Fallo en crear reporte", "Mensaje Emergente", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
         }
+=======
+>>>>>>> parent of cadb8e1... app terminada
     }
 }

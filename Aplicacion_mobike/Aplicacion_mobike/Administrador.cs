@@ -7,18 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using Biblioteca;
 
 namespace Aplicacion_mobike
 {
     public partial class Administrador : Form
     {
-
         public Administrador()
         {
             InitializeComponent();
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -26,6 +22,7 @@ namespace Aplicacion_mobike
             MessageBox.Show("Saliendo del sistema", "Administracion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             this.Close();
         }
+<<<<<<< HEAD
 
         private void Administrador_Load(object sender, EventArgs e)
         {
@@ -43,5 +40,7 @@ namespace Aplicacion_mobike
             rep.report_txt.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             
         }
+=======
+>>>>>>> parent of cadb8e1... app terminada
     }
 }

@@ -67,6 +67,7 @@ namespace Aplicacion_mobike
             }
 
         }
+<<<<<<< HEAD
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -79,5 +80,7 @@ namespace Aplicacion_mobike
                 funcionario_pass_txt.UseSystemPasswordChar=true;
             }
         }
+=======
+>>>>>>> parent of cadb8e1... app terminada
     }
 }

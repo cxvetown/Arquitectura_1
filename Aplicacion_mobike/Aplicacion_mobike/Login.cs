@@ -21,6 +21,7 @@ namespace Aplicacion_mobike
 
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if (contraseña_txt.UseSystemPasswordChar==true)
             {
                 contraseña_txt.UseSystemPasswordChar= false;
@@ -29,6 +30,9 @@ namespace Aplicacion_mobike
             {
                 contraseña_txt.UseSystemPasswordChar = true ;
             }
+=======
+            contraseña_txt.UseSystemPasswordChar = false;
+>>>>>>> parent of cadb8e1... app terminada
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -39,6 +43,7 @@ namespace Aplicacion_mobike
 
         private void button2_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             using (SqlConnection conn = new SqlConnection(Conexion.connectionstring))
             {
                 try
@@ -71,12 +76,21 @@ namespace Aplicacion_mobike
                 login();
             }
 
+=======
+            login();
+>>>>>>> parent of cadb8e1... app terminada
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             Selector_administracion sel = new Selector_administracion();
             sel.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            testbd bd = new testbd();
+            bd.Show();
         }
         public void login()
         {
@@ -86,7 +100,9 @@ namespace Aplicacion_mobike
                 {
                     conn.Open();
                     SqlCommand command = new SqlCommand("SELECT rut, contraseña FROM usuario WHERE rut ='" + rut_txt.Text + "' AND contraseña ='" + contraseña_txt.Text + "'", conn);
+
                     SqlDataReader dr = command.ExecuteReader();
+
                     if (dr.Read())
                     {
                         MessageBox.Show("Login exitoso","iniciar sesion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -108,12 +124,6 @@ namespace Aplicacion_mobike
                 }
             }
 
-        }
-
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            cambio_contraseña ca = new cambio_contraseña();
-            ca.Show();
         }
     }
 }

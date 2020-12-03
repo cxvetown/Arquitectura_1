@@ -27,6 +27,7 @@ namespace Aplicacion_mobike
 
         private void button1_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             if (pass_register_txt.UseSystemPasswordChar== true)
             {
                 pass_register_txt.UseSystemPasswordChar=false;
@@ -35,6 +36,9 @@ namespace Aplicacion_mobike
             {
                 pass_register_txt.UseSystemPasswordChar=true;
             }
+=======
+            pass_register_txt.UseSystemPasswordChar = false;
+>>>>>>> parent of cadb8e1... app terminada
         }
 
         private void Rut_txt_KeyPress(object sender, KeyPressEventArgs e)

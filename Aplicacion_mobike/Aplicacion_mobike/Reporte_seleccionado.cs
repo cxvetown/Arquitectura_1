@@ -7,9 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Mobike_data;
-using Biblioteca;
-using Controlador;
 
 namespace Aplicacion_mobike
 {
@@ -24,6 +21,7 @@ namespace Aplicacion_mobike
         {
             this.Close();
         }
+<<<<<<< HEAD
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -49,5 +47,7 @@ namespace Aplicacion_mobike
             bloq.txt_rut_test.Text = rut_txt.Text;
             bloq.reporte_txt.Text = report_txt.Text;
         }
+=======
+>>>>>>> parent of cadb8e1... app terminada
     }
 }
