@@ -19,14 +19,14 @@ namespace Aplicacion_mobike
 
         private void button1_Click(object sender, EventArgs e)
         {
-            login_funcionario fun = new login_funcionario();
+            Funcionario fun = new Funcionario();
             this.Close();
             fun.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            login_admin ad = new login_admin();
+            Administrador ad = new Administrador();
             this.Close();
             ad.Show();
         }
